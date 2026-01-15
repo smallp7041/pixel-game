@@ -1,0 +1,35 @@
+/* Global Pixel Font and Reset */
+@import '@fontsource/press-start-2p';
+
+:root {
+  --pixel-bg: #2d1b2e;
+  --pixel-text: #e0f8cf;
+  --pixel-primary: #b0c080;
+  --pixel-secondary: #ff0044;
+  --pixel-border: #ffffff;
+  --font-pixel: 'Press Start 2P', system-ui, cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-pixel);
+  background-color: var(--pixel-bg);
+  color: var(--pixel-text);
+  line-height: 1.5;
+  image-rendering: pixelated; /* Essential for pixel art feel */
+  -webkit-font-smoothing: none; /* Sharper fonts for pixel look */
+}
+
+button {
+  font-family: var(--font-pixel);
+  cursor: pointer;
+}
+
+input {
+    font-family: var(--font-pixel);
+}
